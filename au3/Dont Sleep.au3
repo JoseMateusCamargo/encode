@@ -35,6 +35,7 @@ While 1
 	$OldCurPos = MouseGetPos ( )
 	Sleep(2000)
 	$CurPos = MouseGetPos ( )
+	
 	If (($OldCurPos[0]=$CurPos[0]) and ($OldCurPos[1]=$CurPos[1])) then
 
 		MouseMove ( $CurPos[0] + 15, $CurPos[1] )
