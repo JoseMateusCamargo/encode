@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="real-clock"></div>
+    <br>
+    <div id="demo"></div>
+
+    <script>
+        var clock = document.getElementById('real-clock');
+
+        setInterval(function () {
+            clock.innerHTML = ((new Date).toLocaleString().substr(11, 8));
+        }, 1000);
+
+        var myVar = setInterval(myTimer, 1000);
+        function myTimer() {
+            var d = new Date(), displayDate;
+            if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                displayDate = d.toLocaleTimeString('pt-BR');
+            } else {
+                displayDate = d.toLocaleTimeString('pt-BR', { timeZone: 'America/Belem' });
+            }
+            document.getElementById("demo").innerHTML = displayDate;
+        }
+    </script>
+</body>

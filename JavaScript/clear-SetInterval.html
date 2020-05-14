@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- source -->
+    <p><a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_clearinterval">
+            A script on this page starts this clock:</a></p>
+
+    <p id="demo"></p>
+    <button onclick="myStopFunction()">Stop time</button>
+
+    <script>
+        var myVar = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("demo").innerHTML = t;
+        }
+
+        function myStopFunction() {
+            clearInterval(myVar);
+        }
+    </script>
+
+</body>
+
+</html>
