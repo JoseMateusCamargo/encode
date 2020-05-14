@@ -31,7 +31,6 @@ Func About()
 	 MsgBox(064,"Hello","Now your computer not sleep anymore." & @CRLF & "Copyright © Mateus 2020")
 EndFunc
 
-
 While 1
 
 	$OldCurPos = MouseGetPos ( )
