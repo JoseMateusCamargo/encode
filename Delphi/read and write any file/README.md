@@ -1,3 +1,3 @@
-### Simple project to read or write to files
+### Simple algorithm to read or write to files
 
-### Simples projeto para ler ou escrever em arquivos
+### Simples algoritmo para ler ou escrever arquivos
